@@ -1,0 +1,58 @@
+# Workflow simples para deploy do site estático no GitHub Pages
+name: Deploy site estático para Pages
+
+on:
+  # Executa quando há push na branch principal
+  push:
+    branches: ["master"]
+
+  # Permite executar este workflow manualmente na aba Actions
+  workflow_dispatch:
+
+# Define permissões do GITHUB_TOKEN para permitir deploy para Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite apenas um deploy simultâneo, cancelando execuções em progresso entre o run em andamento e o último na fila.
+# No entanto, NÃO cancela runs "em produção" já que queremos permitir que esses deploys sejam concluídos.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Job único já que estamos apenas fazendo deploy
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Instalar dependências
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload da pasta dist
+          path: './dist'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
