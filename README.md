@@ -154,11 +154,11 @@ const API_BASE = 'https://sua-api.com'
 ## 👥 Equipe
 
 - **Desenvolvedores:** 
-Guilherme de Araújo Moreira: [561848]
-Leonardo da Silva Pinto: [564929]
-Lucas Toledo Cortonezi: [563271]
-Samuel Enzo Domingues Monteiro: [564391]
-Yan Breno Barutti Conceição: [566412]
+- Guilherme de Araújo Moreira: [561848]
+- Leonardo da Silva Pinto: [564929]
+- Lucas Toledo Cortonezi: [563271]
+- Samuel Enzo Domingues Monteiro: [564391]
+- Yan Breno Barutti Conceição: [566412]
 
 ## 📄 Licença
 
