@@ -4,7 +4,7 @@ Uma landing page moderna e responsiva para o aplicativo de delivery GourmetOn, d
 
 ## 🚀 Demonstração
 
-🔗 **[Ver Demo Online](https://lucastoledoc.github.io/WebDev-cp5/)**
+🔗 **[Ver Demo Online](https://passa-bola.github.io/WebDev-cp5/)**
 
 ## ✨ Funcionalidades
 
