@@ -29,9 +29,12 @@ function App() {
     loading,
     searchResults,
     categories,
+    categoryResults,
     fetchFeaturedMeals,
     discoverMoreMeals,
-    searchMeals
+    searchMeals,
+    searchByCategory,
+    clearCategoryResults
   } = useMealAPI()
 
   const {
@@ -68,9 +71,12 @@ function App() {
         setSearchTerm={setSearchTerm}
         searchResults={searchResults}
         categories={categories}
+        categoryResults={categoryResults}
         onSearchMeals={searchMeals}
         onRefreshMeals={discoverMoreMeals}
         onViewRecipe={openRecipeModal}
+        onCategoryClick={searchByCategory}
+        onClearCategory={clearCategoryResults}
       />
       
       <FeaturesSection />

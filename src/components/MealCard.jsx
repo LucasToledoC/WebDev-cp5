@@ -21,7 +21,7 @@ const MealCard = ({ meal, onViewRecipe, showDescription = true }) => {
           {meal.strMeal}
         </h4>
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs sm:text-sm text-blue-500 bg-blue-100 px-2 py-1 rounded">
+          <span className="text-xs sm:text-sm text-primary-new bg-primary-light px-2 py-1 rounded font-medium">
             {meal.strCategory}
           </span>
           <span className="text-xs sm:text-sm text-gray-500 flex items-center">
@@ -36,7 +36,7 @@ const MealCard = ({ meal, onViewRecipe, showDescription = true }) => {
         )}
         <Button 
           onClick={() => onViewRecipe(meal)}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base py-2 sm:py-3"
+          className="w-full bg-primary-new hover:bg-emerald-700 text-white text-sm sm:text-base py-2 sm:py-3 font-semibold shadow-md"
         >
           <ChefHat className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
           Ver Receita

@@ -22,9 +22,9 @@ const AboutSection = () => {
   return (
     <section id="apresentacao" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Por que escolher o <span className="text-blue-500">GourmetOn</span>?
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Por que escolher o <span className="text-primary-new">Gourmet</span><span className="text-secondary-new">On</span>?
           </h2>
         </div>
         
@@ -33,8 +33,8 @@ const AboutSection = () => {
             const IconComponent = feature.icon
             return (
               <div key={index} className="text-center p-4 sm:p-6 bg-white rounded-lg shadow-lg hover-lift">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                  <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-blue-500" />
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-primary-new" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{feature.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{feature.description}</p>
@@ -48,19 +48,19 @@ const AboutSection = () => {
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
               Transformando a experiência de delivery
             </h3>
-            <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-dark-description mb-4 sm:mb-6 leading-relaxed">
               O GourmetOn conecta você aos melhores restaurantes da sua região, 
               oferecendo uma experiência única de pedidos online com tecnologia 
               de ponta e atendimento excepcional.
             </p>
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
-              <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-2xl sm:text-3xl font-bold text-blue-500">500+</div>
-                <div className="text-sm sm:text-base text-gray-600">Restaurantes</div>
+              <div className="text-center p-4 bg-primary-light rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-primary-new">500+</div>
+                <div className="text-sm sm:text-base text-gray-400">Restaurantes</div>
               </div>
-              <div className="text-center p-4 bg-blue-50 rounded-lg">
-                <div className="text-2xl sm:text-3xl font-bold text-blue-500">50k+</div>
-                <div className="text-sm sm:text-base text-gray-600">Clientes Felizes</div>
+              <div className="text-center p-4 bg-secondary-light rounded-lg">
+                <div className="text-2xl sm:text-3xl font-bold text-secondary-new">50k+</div>
+                <div className="text-sm sm:text-base text-gray-400">Clientes Felizes</div>
               </div>
             </div>
           </div>

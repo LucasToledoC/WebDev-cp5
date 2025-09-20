@@ -20,9 +20,9 @@ const Header = ({ isScrolled, scrollToSection }) => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <h1 className={`text-xl sm:text-2xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-blue-500' : 'text-white'
+                isScrolled ? 'text-primary-new' : 'text-white'
               }`}>
-                Gourmet<span className={isScrolled ? 'text-blue-500' : 'text-white'}>On</span>
+                Gourmet<span className={isScrolled ? 'text-secondary-new' : 'text-white'}>On</span>
               </h1>
             </div>
             
@@ -35,8 +35,8 @@ const Header = ({ isScrolled, scrollToSection }) => {
                     onClick={() => scrollToSection(item)}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 capitalize ${
                       isScrolled 
-                        ? 'text-gray-700 hover:text-blue-500' 
-                        : 'text-white hover:text-blue-300'
+                        ? 'text-gray-700 hover:text-primary-new' 
+                        : 'text-white hover:text-green-300'
                     }`}
                   >
                     {item}
@@ -52,8 +52,8 @@ const Header = ({ isScrolled, scrollToSection }) => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-500' 
-                  : 'text-white hover:text-blue-300'
+                  ? 'text-gray-700 hover:text-primary-new' 
+                  : 'text-white hover:text-green-300'
               }`}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,7 +69,7 @@ const Header = ({ isScrolled, scrollToSection }) => {
                 <button
                   key={item}
                   onClick={() => handleMenuClick(item)}
-                  className="text-gray-700 hover:text-blue-500 hover:bg-blue-50 block px-4 py-3 rounded-md text-base font-medium w-full text-left capitalize transition-colors"
+                  className="text-gray-800 hover:text-primary-new hover:bg-primary-light block px-4 py-3 rounded-md text-base font-medium w-full text-left capitalize transition-colors"
                 >
                   {item}
                 </button>

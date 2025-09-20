@@ -49,7 +49,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.52 0.18 125.0); /* Verde lime mais claro e vibrante */
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -61,11 +61,11 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --chart-1: oklch(0.68 0.25 125.0); /* Verde lime vibrante */
+  --chart-2: oklch(0.75 0.2 115.0); /* Verde lime claro */
+  --chart-3: oklch(0.598 0.17 30.392); /* Laranja vibrante */
+  --chart-4: oklch(0.728 0.189 45.429); /* Laranja amarelado */
+  --chart-5: oklch(0.65 0.22 120.0); /* Verde lime médio */
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -83,7 +83,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
+  --primary: oklch(0.65 0.22 125.0); /* Verde lime mais claro para modo escuro */
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -95,14 +95,14 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
+  --chart-1: oklch(0.588 0.243 150.376); /* Verde mais intenso para modo escuro */
+  --chart-2: oklch(0.696 0.17 120.48); /* Verde claro para modo escuro */
+  --chart-3: oklch(0.669 0.188 25.08); /* Laranja para modo escuro */
+  --chart-4: oklch(0.627 0.265 40.9); /* Laranja avermelhado para modo escuro */
+  --chart-5: oklch(0.545 0.246 155.439); /* Verde escuro para modo escuro */
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: oklch(0.588 0.243 150.376); /* Verde para sidebar */
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
@@ -154,7 +154,61 @@ html {
 
 /* Custom styles for better visual appeal */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  background: linear-gradient(135deg, #84cc16 0%, #f97316 100%);
+}
+
+/* New color scheme - Lime Green & Orange for better contrast */
+.bg-primary-new {
+  background-color: #65a30d !important; /* lime-600 */
+}
+
+.bg-primary-new:hover {
+  background-color: #4d7c0f !important; /* lime-700 */
+}
+
+.bg-secondary-new {
+  background-color: #ea580c !important; /* orange-600 */
+}
+
+.bg-secondary-new:hover {
+  background-color: #c2410c !important; /* orange-700 */
+}
+
+.text-primary-new {
+  color: #65a30d !important; /* lime-600 */
+}
+
+.text-secondary-new {
+  color: #ea580c !important; /* orange-600 */
+}
+
+.bg-primary-light {
+  background-color: #ecfccb !important; /* lime-100 */
+}
+
+.bg-secondary-light {
+  background-color: #fed7aa !important; /* orange-100 */
+}
+
+.border-primary-new {
+  border-color: #65a30d !important; /* lime-600 */
+}
+
+.focus-primary {
+  --tw-ring-color: #84cc16 !important; /* lime-500 */
+}
+
+/* Better contrast text colors */
+.text-gray-800 {
+  color: #2d4a2d !important;
+}
+
+.text-green-100 {
+  color: #dcfce7 !important;
+}
+
+.text-green-300 {
+  color: #86efac !important;
 }
 
 /* Hover effects */
@@ -326,7 +380,7 @@ html {
 button:focus-visible,
 input:focus-visible,
 a:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #059669;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -399,18 +453,48 @@ a:focus-visible {
 /* Melhorias para contraste em modo escuro */
 @media (prefers-color-scheme: dark) {
   .text-gray-600 {
-    color: #9ca3af;
+    color: #b8c5b8;
   }
   
   .text-gray-700 {
-    color: #6b7280;
+    color: #9db09d;
   }
   
   .bg-white {
-    background-color: #1f2937;
+    background-color: #2d4a2d;
   }
   
   .border-gray-300 {
-    border-color: #374151;
+    border-color: #568456;
   }
+}
+
+/* Textos mais claros para melhor legibilidade */
+.text-gray-900 {
+  color: #f8fafc !important; /* Quase branco */
+}
+
+.text-gray-800 {
+  color: #f1f5f9 !important; /* Bem claro */
+}
+
+.text-gray-700 {
+  color: #e2e8f0 !important; /* Claro */
+}
+
+.text-gray-600 {
+  color: #cbd5e1 !important; /* Médio claro */
+}
+
+.text-gray-500 {
+  color: #94a3b8 !important; /* Médio */
+}
+
+.text-gray-400 {
+  color: #64748b !important; /* Mais escuro que os outros mas ainda legível */
+}
+
+/* Texto específico mais escuro */
+.text-dark-description {
+  color: #374151 !important; /* Cinza escuro para descrição específica */
 }

@@ -25,9 +25,9 @@ const TestimonialsSection = () => {
   return (
     <section id="depoimentos" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">O que nossos clientes dizem</h2>
-          <p className="text-xl text-gray-600">Veja por que milhares de pessoas confiam no GourmetOn</p>
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-500 mb-4">O que nossos clientes dizem</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-400">Veja por que milhares de pessoas confiam no GourmetOn</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

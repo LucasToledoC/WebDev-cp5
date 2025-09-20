@@ -35,10 +35,10 @@ const RecipeModal = ({ meal, isOpen, onClose }) => {
                 className="w-full h-48 sm:h-64 object-cover rounded-lg mb-3 sm:mb-4"
               />
               <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                <span className="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
+                <span className="bg-primary-light text-primary-new px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                   {meal.strCategory}
                 </span>
-                <span className="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">
+                <span className="bg-secondary-light text-secondary-new px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                   {meal.strArea}
                 </span>
               </div>
