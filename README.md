@@ -171,6 +171,3 @@ Este projeto foi desenvolvido para fins educacionais como parte do checkpoint da
 - [Lucide Icons](https://lucide.dev/) - Biblioteca de ícones
 - [Vite](https://vitejs.dev/) - Build tool
 
----
-
-**Desenvolvido com ❤️ por Lucas Toledo para FIAP**
